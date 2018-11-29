@@ -12,9 +12,10 @@ countfile=/ABSOLUTE/path/to/count.txt	# the ABSOLUTE location of persistent coun
 dose=1				# How many units (e.g. 1 tablet) taken per dose.
 form=tablet			# Set the form in singular form
 drug="GENERIC (BRAND)"		# Replace with drug name
-strength="1 mg"			# Replace with strength
+strength="1 mg"		# Replace with strength
 
-# Don't forget to set your crontab!
+# Then, edit the count.txt file with the number of tabs.
+# Finally, don't forget to set your crontab!
 
 
 ####### DO NOT EDIT BELOW THIS LINE  ##########
