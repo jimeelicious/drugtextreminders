@@ -5,9 +5,9 @@
 
 admin=	# sends notifications to administrator
 email=	# sends alert to this email (for more than 1 email: comma-separate, no spaces)
-countfile=/home/jimmy/bin/loafie/count.txt	# absolute location of persistent counter file
+countfile=	# the ABSOLUTE location of persistent counter file
 dose=1				# How many units (e.g. 1 tablet) taken per dose.
-form=capsule			# Set the form in singular form
+form=tablet			# Set the form in singular form
 drug="GENERIC (BRAND)"		# Replace with drug name
 strength="1 mg"			# Replace with strength
 
