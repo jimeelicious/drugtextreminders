@@ -1,17 +1,23 @@
 #!/bin/bash
 
-# The counter file contains how many tablets left in the bottle
-# SET THE CRONTAB to drug dosing frequency!
+######### SETUP ################
+# Examine and replace values in this section as appropriate.
+# No variable can be left blank!  Then, set the drug dosing
+# frequency in the crontab. Note: The counter.txt file
+# contains how many tablets left in the bottle.
 
-admin=	# sends notifications to administrator
-email=	# sends alert to this email (for more than 1 email: comma-separate, no spaces)
-countfile=	# the ABSOLUTE location of persistent counter file
+admin=admin@email.com	# sends notifications to administrator
+email=user@email.com	# sends alert to this email (for more than 1 email: comma-separate, no spaces)
+countfile=/ABSOLUTE/path/to/count.txt	# the ABSOLUTE location of persistent counter file
 dose=1				# How many units (e.g. 1 tablet) taken per dose.
 form=tablet			# Set the form in singular form
 drug="GENERIC (BRAND)"		# Replace with drug name
 strength="1 mg"			# Replace with strength
 
-###########################################
+# Don't forget to set your crontab!
+
+
+####### DO NOT EDIT BELOW THIS LINE  ##########
 
 count=$(cat "$countfile")
 # Sets dose form to plural if taking more than 1 tablet per dose
